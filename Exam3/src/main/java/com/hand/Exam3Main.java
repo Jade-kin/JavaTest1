@@ -6,7 +6,10 @@ public class Exam3Main {
     public static void main( String[] args ) {
 
         Random random = new Random();
-        List<Integer> list = new ArrayList<Integer>();
+		List<Integer> list = new ArrayList<Integer>();
+        random.ints(0,100)
+                .limit(50).sorted().forEach((i)-> list.add(i));
+        
         Map<Integer,List> listMap = new HashMap<Integer,List>();
         for (int i = 0;i < 50;i++){
             list.add(random.nextInt(100));
