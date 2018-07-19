@@ -11,9 +11,6 @@ public class Exam3Main {
                 .limit(50).sorted().forEach((i)-> list.add(i));
         
         Map<Integer,List> listMap = new HashMap<Integer,List>();
-        for (int i = 0;i < 50;i++){
-            list.add(random.nextInt(100));
-        }
 
         listMap = listToMap(list);
         System.out.println("得到的Map："+listMap);
